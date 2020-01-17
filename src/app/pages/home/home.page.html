@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Locadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let filmes of filme"
+      ><ion-label>{{ filmes.titulo }}</ion-label
+      ><ion-label class="ion-text-end" color="medium">{{ filmes.genero }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button color="primary" expand="block" href="/cadastro">Cadastrar Filme</ion-button>
+</ion-content>

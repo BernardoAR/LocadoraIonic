@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Título</ion-label>
+    <ion-input type="text" [(ngModel)]="filme.titulo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Gênero</ion-label>
+    <ion-input type="text" [(ngModel)]="filme.genero"></ion-input>
+  </ion-item>
+  <ion-button (click)="grava()" expand="block" href="/home">
+    Gravar
+  </ion-button>
+</ion-content>
